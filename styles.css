@@ -1,0 +1,199 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("https://spaceflightnow.com/wp-content/uploads/2024/08/20240828_Starlink_8-6_launch_MC-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    backdrop-filter: brightness(0.4);
+    margin: 0;
+    padding: 0;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+main {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+}
+
+main h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+.searcher {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#searcher {
+    margin-bottom: 20px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+#searcher::placeholder {
+    color: white;
+    opacity: 0.3;
+}
+
+.launch {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.launch_frame {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    content-visibility: auto;
+    color: black !important;
+}
+
+.cover {
+    opacity: 0;
+    width: 100%;
+    background-color: #090909;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    border-radius: 10px 10px 0px 0px;
+    transform: translate(-50%, -40%);   
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.launch:hover .cover  {
+    opacity: 0.9;
+    cursor: pointer;
+    height: 50px;
+    transition: all 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.cover h3 {
+    color: white;
+    font-size: 20px;
+    opacity: 1 !important;
+    font-weight: 700;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.launch_info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.launch_info .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.launch_info .title h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.state {
+    padding: 6px 10px;
+    background-color: hsl(0 84.2% 60.2%);
+    color: #fff;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.success {
+    background-color: rgb(73, 198, 81) !important;
+}
+
+.ondetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.details img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 20px;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 10px;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+
+    .launch {
+        padding: 16px;
+        width: 90%;
+    }
+
+    .launch_frame {
+        height: 200px;
+    }
+
+    .cover {
+        padding: 10px;
+    }
+
+    .cover h3 {
+        font-size: 16px;
+    }
+
+    .launch_info .title h2 {
+        font-size: 20px;
+    }
+
+    .state {
+        font-size: 12px;
+    }
+
+    .details img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+}
+
